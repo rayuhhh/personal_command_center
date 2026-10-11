@@ -40,7 +40,7 @@ def fetch_page_title(url):
             # navigate to website and wait til network goes quiet:
             page.goto(url, wait_until="networkidle")
 
-            # extra the raw html content:
+            # extract the raw html content:
             html_content = page.content()
 
             # parse the html with beautiful soup
